@@ -1,0 +1,28 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>DETAILS</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'polls/bootstrap-4.5.0-dist/css/bootstrap.min.css' %}">
+   {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}"> {% endcomment %}
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<h1>Header </h1>
+<body>
+  {% include "polls/header.html" %}
+  <div class="jumbotron">
+    <div class="container">
+    
+      {% block maincontent %}
+      {% endblock maincontent %}
+     
+    </div>
+  </div>
+   {% include "polls/footer.html" %}
+</body>
+
+</html>
